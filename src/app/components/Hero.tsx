@@ -14,7 +14,7 @@ export function Hero() {
               <span>{heroData.badge.text}</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl text-neutral-900 mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl text-neutral-900 mb-6 leading-tight tracking-tighter">
               {heroData.heading.line1} <span className="text-rose-500">{heroData.heading.line2}</span>
             </h1>
             
