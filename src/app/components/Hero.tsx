@@ -15,8 +15,7 @@ export function Hero() {
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl text-neutral-900 mb-6 leading-tight">
-              {heroData.heading.line1}
-              <span className="text-rose-500">{heroData.heading.line2}</span>
+              {heroData.heading.line1} <span className="text-rose-500">{heroData.heading.line2}</span>
             </h1>
             
             <p className="text-lg text-neutral-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 whitespace-pre-line">
