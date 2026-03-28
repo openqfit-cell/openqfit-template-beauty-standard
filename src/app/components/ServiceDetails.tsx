@@ -4,7 +4,7 @@ import { AnimatedSection } from './AnimatedSection';
 
 export function ServiceDetails() {
   return (
-    <AnimatedSection id="service-details" delay={0.05} className="py-16 sm:py-20 lg:py-24 bg-neutral-50">
+    <AnimatedSection id="service-details" delay={0.05} amount={0.05} className="py-16 sm:py-20 lg:py-24 bg-neutral-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
