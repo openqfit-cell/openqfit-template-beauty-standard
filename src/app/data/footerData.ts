@@ -5,7 +5,7 @@ import { FooterData } from './types';
 export const footerData: FooterData = {
   brand: {
     name: brandName,
-    tagline: '프리미엄 뷰티 케어 전문\n당신의 아름다움을 완성합니다',
+    tagline: '프리미엄 뷰티 케어 전문 당신의 아름다움을 완성합니다',
   },
   labels: {
     navigation: '메뉴',
@@ -47,5 +47,5 @@ export const footerData: FooterData = {
       { label: '토요일', hours: '10:00 - 19:00' },
     ],
   },
-  copyright: '© 2024 La Belle. All rights reserved.',
+  copyright: '© 2026 La Belle. All rights reserved.',
 };
