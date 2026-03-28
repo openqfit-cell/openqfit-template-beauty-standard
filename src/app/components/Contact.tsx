@@ -1,9 +1,10 @@
 import { MapPin, Phone, Clock, MessageCircle, Mail } from 'lucide-react';
 import { contactData } from '../data/contactData';
+import { AnimatedSection } from './AnimatedSection';
 
 export function Contact() {
   return (
-    <section id="contact" className="py-16 sm:py-20 lg:py-24 bg-white">
+    <AnimatedSection id="contact" delay={0.05} className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
@@ -200,6 +201,6 @@ export function Contact() {
           </div>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

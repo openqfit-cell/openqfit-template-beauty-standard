@@ -1,8 +1,9 @@
 import { pricingData } from '../data/pricingData';
+import { AnimatedSection } from './AnimatedSection';
 
 export function Pricing() {
   return (
-    <section id="pricing" className="py-16 sm:py-20 lg:py-24 bg-white">
+    <AnimatedSection id="pricing" delay={0.05} className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl text-neutral-900 mb-4">
@@ -33,7 +34,7 @@ export function Pricing() {
                 )}
               </div>
 
-              <div className="text-3xl text-neutral-900 mb-5 font-semibold">{item.price}</div>
+              <div className="text-3xl text-neutral-900 mb-5">{item.price}</div>
 
               <ul className="space-y-2.5 text-sm text-neutral-600 mb-2">
                 {item.highlights.map((highlight, highlightIndex) => (
@@ -63,6 +64,6 @@ export function Pricing() {
         </div>
 
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

@@ -1,8 +1,9 @@
 import { galleryData } from '../data/galleryData';
+import { AnimatedSection } from './AnimatedSection';
 
 export function Gallery() {
   return (
-    <section id="gallery" className="py-16 sm:py-20 lg:py-24 bg-white">
+    <AnimatedSection id="gallery" delay={0.05} className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
@@ -37,6 +38,6 @@ export function Gallery() {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

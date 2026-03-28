@@ -1,10 +1,11 @@
 import { servicesOverviewData } from '../data/servicesOverviewData';
+import { AnimatedSection } from './AnimatedSection';
 
 export function ServicesOverview() {
   const BadgeIcon = servicesOverviewData.sectionHeader.badge!.icon;
 
   return (
-    <section id="services" className="py-16 sm:py-20 lg:py-24 bg-white">
+    <AnimatedSection id="services" delay={0.05} className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
@@ -55,6 +56,6 @@ export function ServicesOverview() {
           </a>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

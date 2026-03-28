@@ -1,4 +1,6 @@
 import { heroData } from '../data/heroData';
+import { AnimatedSection } from './AnimatedSection';
+import { motion } from 'framer-motion';
 
 export function Hero() {
   const BadgeIcon = heroData.badge.icon;
@@ -9,42 +11,62 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 text-rose-700 rounded-full text-sm mb-6">
+            <motion.div
+              initial={{ opacity: 0, x: -10 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6}}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 text-rose-700 rounded-full text-sm mb-6">
               <BadgeIcon className="w-4 h-4 fill-current" />
               <span>{heroData.badge.text}</span>
-            </div>
-            
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl text-neutral-900 mb-6 leading-tight tracking-tighter">
+            </motion.div>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-4xl sm:text-5xl lg:text-6xl text-neutral-900 mb-6 leading-tight tracking-tighter"
+            >
               {heroData.heading.line1} <span className="text-rose-500">{heroData.heading.line2}</span>
-            </h1>
-            
-            <p className="text-lg text-neutral-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 whitespace-pre-line">
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-lg text-neutral-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 whitespace-pre-line">
               {heroData.description}
-            </p>
+            </motion.p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               {heroData.ctaButtons.map((button, index) => {
                 const ButtonIcon = button.icon;
                 return (
                   <a
                     key={index}
                     href={button.href}
-                    className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl transition-colors shadow-sm min-h-[48px] ${
-                      button.variant === 'primary'
-                        ? 'bg-rose-500 text-white hover:bg-rose-600'
-                        : 'bg-white text-neutral-700 border border-neutral-200 hover:bg-neutral-50'
-                    }`}
+                    className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl transition-colors shadow-sm min-h-[48px] ${button.variant === 'primary'
+                      ? 'bg-rose-500 text-white hover:bg-rose-600'
+                      : 'bg-white text-neutral-700 border border-neutral-200 hover:bg-neutral-50'
+                      }`}
                   >
                     {ButtonIcon && <ButtonIcon className="w-5 h-5" />}
                     <span>{button.label}</span>
                   </a>
                 );
               })}
-            </div>
+            </motion.div>
 
             {/* Trust Highlights */}
-            <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-neutral-600">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-neutral-600">
               {heroData.trustHighlights.map((item, index) => {
                 const Icon = item.icon;
                 return (
@@ -54,18 +76,22 @@ export function Hero() {
                   </div>
                 );
               })}
-            </div>
+            </motion.div>
           </div>
 
           {/* Hero Image */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
+            <motion.div
+              initial={{ opacity: 0, x: 24 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
               <img
                 src={heroData.heroImage.url}
                 alt={heroData.heroImage.alt}
                 className="w-full h-full object-cover"
               />
-            </div>
+            </motion.div>
             {/* Decorative element */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-rose-100 rounded-2xl -z-10 hidden lg:block"></div>
           </div>
