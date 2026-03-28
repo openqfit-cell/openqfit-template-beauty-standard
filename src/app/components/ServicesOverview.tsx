@@ -49,7 +49,7 @@ export function ServicesOverview() {
         <div className="text-center mt-12 lg:mt-16">
           <a
             href={servicesOverviewData.cta.href}
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-neutral-900 text-white rounded-xl hover:bg-neutral-800 transition-colors min-h-[56px] text-base"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-neutral-900 text-white rounded-xl hover:bg-neutral-800 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 min-h-[56px] text-base"
           >
             <span>{servicesOverviewData.cta.text}</span>
             <span>→</span>

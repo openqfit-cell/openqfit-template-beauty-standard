@@ -56,7 +56,7 @@ export function Header() {
             <div className="hidden lg:flex items-center space-x-3">
               <a
                 href={headerData.ctaButtons.booking.href}
-                className="inline-flex items-center gap-2 px-5 py-2.5 bg-rose-500 text-white rounded-lg hover:bg-rose-600 transition-colors text-sm"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-rose-500 text-white rounded-lg hover:bg-rose-600 transition-all text-sm duration-300 hover:shadow-lg hover:-translate-y-1"
               >
                 <Calendar className="w-4 h-4" />
                 <span>{headerData.ctaButtons.booking.label}</span>
@@ -92,7 +92,7 @@ export function Header() {
                 <a
                   href={headerData.ctaButtons.booking.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-center gap-2 px-4 py-3 bg-rose-500 text-white rounded-lg hover:bg-rose-600 transition-colors"
+                  className="flex items-center justify-center gap-2 px-4 py-3 bg-rose-500 text-white rounded-lg hover:bg-rose-600 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 >
                   <Calendar className="w-4 h-4" />
                   <span>{headerData.ctaButtons.booking.label}</span>

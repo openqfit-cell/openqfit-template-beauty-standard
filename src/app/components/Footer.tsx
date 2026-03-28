@@ -21,7 +21,7 @@ export function Footer() {
                 <a
                   key={index}
                   href={social.url}
-                  className="w-12 h-12 bg-neutral-800 hover:bg-neutral-700 rounded-lg flex items-center justify-center transition-colors"
+                  className="w-12 h-12 bg-neutral-800 hover:bg-neutral-700 rounded-lg flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                   aria-label={social.platform}
                 >
                   <Icon className="w-6 h-6" />

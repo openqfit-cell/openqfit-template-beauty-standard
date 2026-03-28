@@ -30,7 +30,7 @@ export function About() {
               {aboutData.brandStory.stats.map((stat, index) => {
                 const Icon = stat.icon;
                 return (
-                  <div key={index} className="bg-white rounded-xl p-4 border border-neutral-200">
+                  <div key={index} className="bg-white rounded-xl p-4 border border-neutral-200 hover:shadow-md transition-shadow">
                     <div className="flex items-center gap-2 mb-2">
                       <Icon className="w-5 h-5 text-rose-500 flex-shrink-0" />
                       <span className="text-xl sm:text-2xl text-neutral-900">{stat.value}</span>
@@ -43,7 +43,7 @@ export function About() {
           </div>
 
           {/* Director Profile */}
-          <div className="bg-white rounded-2xl p-8 border border-neutral-200 shadow-sm">
+          <div className="bg-white rounded-2xl p-8 border border-neutral-200 shadow-md hover:shadow-lg transition-shadow">
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
                 <div className="w-32 h-32 rounded-2xl overflow-hidden bg-neutral-100">

@@ -49,7 +49,7 @@ export function Hero() {
                   <a
                     key={index}
                     href={button.href}
-                    className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl transition-colors shadow-sm min-h-[48px] ${button.variant === 'primary'
+                    className={`inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl transition-all duration-300 hover:shadow-lg hover:-translate-y-1 shadow-sm min-h-[48px] ${button.variant === 'primary'
                       ? 'bg-rose-500 text-white hover:bg-rose-600'
                       : 'bg-white text-neutral-700 border border-neutral-200 hover:bg-neutral-50'
                       }`}

@@ -143,7 +143,7 @@ export function Contact() {
                 href={contactData.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-4 py-3 bg-white text-neutral-700 border border-neutral-300 rounded-xl hover:bg-neutral-50 hover:border-neutral-400 transition-colors"
+                className="flex items-center justify-center gap-2 px-4 py-3 bg-white text-neutral-700 border border-neutral-300 rounded-xl hover:bg-neutral-50 hover:border-neutral-400 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               >
                 <MapPin className="w-4 h-4" />
                 <span className="text-sm">{contactData.labels.googleMaps}</span>
@@ -152,7 +152,7 @@ export function Contact() {
                 href={contactData.naverMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 px-4 py-3 bg-white text-neutral-700 border border-neutral-300 rounded-xl hover:bg-neutral-50 hover:border-neutral-400 transition-colors"
+                className="flex items-center justify-center gap-2 px-4 py-3 bg-white text-neutral-700 border border-neutral-300 rounded-xl hover:bg-neutral-50 hover:border-neutral-400 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
               >
                 <MapPin className="w-4 h-4" />
                 <span className="text-sm">{contactData.labels.naverMaps}</span>
@@ -168,7 +168,7 @@ export function Contact() {
               <div className="space-y-3">
                 <a
                   href={`tel:${contactData.phone.number}`}
-                  className="flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-white text-rose-500 rounded-xl hover:bg-rose-50 transition-colors"
+                  className="flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-white text-rose-500 rounded-xl hover:bg-rose-50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 >
                   <Phone className="w-5 h-5" />
                   <span>{contactData.cta.phoneButtonLabel}</span>
@@ -177,7 +177,7 @@ export function Contact() {
                   href={contactData.kakaoTalk.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-white/10 backdrop-blur text-white border border-white/50 rounded-xl hover:bg-white/30 transition-colors"
+                  className="flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-white/10 backdrop-blur text-white border border-white/50 rounded-xl hover:bg-white/30 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 >
                   <MessageCircle className="w-5 h-5" />
                   <span>{contactData.cta.kakaoButtonLabel}</span>

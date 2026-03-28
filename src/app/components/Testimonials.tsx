@@ -58,7 +58,7 @@ export function Testimonials() {
           </p>
           <a
             href={testimonialsData.cta.buttonHref}
-            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-neutral-900 text-white rounded-xl hover:bg-neutral-800 transition-colors min-h-[48px]"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-neutral-900 text-white rounded-xl hover:bg-neutral-800 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 min-h-[48px]"
           >
             <span>{testimonialsData.cta.buttonText}</span>
             <span>→</span>
