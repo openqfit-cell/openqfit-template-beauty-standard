@@ -16,7 +16,6 @@ export function Hero() {
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl text-neutral-900 mb-6 leading-tight">
               {heroData.heading.line1}
-              <br />
               <span className="text-rose-500">{heroData.heading.line2}</span>
             </h1>
             
