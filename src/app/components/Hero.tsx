@@ -7,14 +7,23 @@ export function Hero() {
 
   return (
     <section className="relative bg-gradient-to-b from-neutral-50 to-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-12">
+      <div className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-8 py-16 sm:py-16 lg:py-12">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left px-8 sm:px-0">
+            <div className="absolute inset-0 w-full h-full sm:hidden">
+              <img
+                src={heroData.heroImage.url}
+                alt={heroData.heroImage.alt}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+            {/* Gradient Overlay for Readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/50 sm:hidden" />
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 text-rose-700 rounded-full text-sm mb-2">
+              className="relative z-10 inline-flex items-center gap-2 px-4 py-2 bg-rose-50 text-rose-700 rounded-full text-sm mb-2">
               <BadgeIcon className="w-4 h-4 fill-current" />
               <span>{heroData.badge.text}</span>
             </motion.div>
@@ -23,7 +32,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-4xl sm:text-5xl lg:text-6xl text-neutral-900 mb-6 leading-tight tracking-tighter"
+              className="relative z-10 text-4xl sm:text-5xl lg:text-6xl text-neutral-100 sm:text-neutral-900 mb-6 leading-tight tracking-tighter"
             >
               {heroData.heading.line1} <span className="text-rose-500">{heroData.heading.line2}</span>
             </motion.h1>
@@ -32,7 +41,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg text-neutral-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 whitespace-pre-line">
+              className="relative z-10 text-lg text-neutral-300 sm:text-neutral-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 whitespace-pre-line">
               {heroData.description}
             </motion.p>
 
@@ -41,7 +50,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+              className="relative z-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               {heroData.ctaButtons.map((button, index) => {
                 const ButtonIcon = button.icon;
                 return (
@@ -65,7 +74,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-neutral-600">
+              className="relative z-10 flex flex-wrap gap-6 justify-center lg:justify-start text-sm text-neutral-100 sm:text-neutral-600">
               {heroData.trustHighlights.map((item, index) => {
                 const Icon = item.icon;
                 return (
@@ -79,7 +88,7 @@ export function Hero() {
           </div>
 
           {/* Hero Image */}
-          <div className="relative">
+          <div className="relative hidden sm:block h-full">
             <motion.div
               initial={{ opacity: 0, x: 24 }}
               animate={{ opacity: 1, x: 0 }}
@@ -92,9 +101,9 @@ export function Hero() {
                 className="w-full h-full object-cover"
               />
             </motion.div>
-            {/* Decorative element */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-rose-100 rounded-2xl -z-10 hidden lg:block"></div>
           </div>
+
+
         </div>
       </div>
     </section>
