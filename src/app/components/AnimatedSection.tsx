@@ -14,7 +14,7 @@ export function AnimatedSection({
   className = '',
   delay = 0,
   id,
-  amount = 0.15,
+  amount = 0.10,
 }: AnimatedSectionProps) {
   return (
     <motion.section
