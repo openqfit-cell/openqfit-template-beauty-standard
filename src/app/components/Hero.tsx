@@ -12,10 +12,9 @@ export function Hero() {
           {/* Content */}
           <div className="text-center lg:text-left">
             <motion.div
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6}}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 text-rose-700 rounded-full text-sm mb-6">
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 text-rose-700 rounded-full text-sm mb-2">
               <BadgeIcon className="w-4 h-4 fill-current" />
               <span>{heroData.badge.text}</span>
             </motion.div>
@@ -85,6 +84,7 @@ export function Hero() {
               initial={{ opacity: 0, x: 24 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
+              whileHover={{ scale: 1.02 }} transition={{ duration: 0.3 }}
               className="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
               <img
                 src={heroData.heroImage.url}

@@ -1,5 +1,6 @@
 import { pricingData } from '../data/pricingData';
 import { AnimatedSection } from './AnimatedSection';
+import { motion } from 'framer-motion';
 
 export function Pricing() {
   return (
@@ -18,9 +19,8 @@ export function Pricing() {
           {pricingData.items.map((item, index) => (
             <div
               key={index}
-              className={`rounded-2xl border p-6 lg:p-8 transition-shadow hover:shadow-lg ${
-                item.featured ? 'border-rose-300 bg-rose-50/40' : 'border-neutral-200 bg-white'
-              }`}
+              className={`rounded-2xl border p-6 lg:p-8 transition-shadow hover:shadow-lg ${item.featured ? 'border-rose-300 bg-rose-50/40' : 'border-neutral-200 bg-white'
+                }`}
             >
               <div className="flex items-start justify-between gap-4 mb-5">
                 <div>
@@ -28,9 +28,13 @@ export function Pricing() {
                   <p className="text-neutral-600 leading-relaxed">{item.description}</p>
                 </div>
                 {item.featured && (
-                  <span className="px-3 py-1 rounded-full bg-rose-500 text-white text-xs whitespace-nowrap">
+                  <motion.span
+                    animate={{ y: [0, -10, 0], backgroundColor: ["#ff98be", "#f43f5e", "#ff98be"], }}
+                    transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                    className="inline-block px-3 py-1 rounded-full bg-rose-500 text-white text-[10px] sm:text-xs font-bold shadow-md whitespace-nowrap select-none"
+                  >
                     추천
-                  </span>
+                  </motion.span>
                 )}
               </div>
 
