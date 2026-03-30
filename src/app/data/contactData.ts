@@ -38,9 +38,9 @@ export const contactData: ContactData = {
     { label: '버스', info: '146, 740, 341 강남역 정류장' },
     { label: '주차', info: '건물 지하 주차장 (2시간 무료)' },
   ],
-  mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.4079294985537!2d127.02761587649893!3d37.49794197204438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca159e9e88187%3A0x64e4f2d5d83a8378!2sGangnam%20Station!5e0!3m2!1sen!2skr!4v1234567890123!5m2!1sen!2skr',
-  googleMapsUrl: 'https://map.google.com/maps?q=서울시+강남구+테헤란로+123',
-  naverMapsUrl: 'https://map.naver.com/p/search/서울시 강남구 테헤란로 123',
+  mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6326.049689756841!2d126.96242809295654!3d37.55447843162196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356f88df6578da5d%3A0xece1c30550be71c!2z66Gv642w7JWE7Jq466CbIOyEnOyauOyXreygkA!5e0!3m2!1sko!2skr!4v1774830247191!5m2!1sko!2skr',
+  googleMapsUrl: 'https://maps.app.goo.gl/wTFqeWQSzAmECxY78',
+  naverMapsUrl: 'https://naver.me/FfeOlQjt',
   reservationNotice: '원활한 서비스 제공을 위해 사전 예약을 권장드립니다. 당일 예약도 가능하나 예약 상황에 따라 대기 시간이 발생할 수 있습니다. 예약 시 원하시는 시술과 시간을 말씀해주세요.',
   cta: {
     title: '예약 문의',
