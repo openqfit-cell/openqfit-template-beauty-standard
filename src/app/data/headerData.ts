@@ -3,6 +3,10 @@ import { Phone, Calendar } from 'lucide-react';
 
 export const headerData = {
   brandName,
+  image: {
+    src: '/images/logo.png',
+    alt: 'La Belle',
+  },
   phoneNumber: contactInfo.phone.number,
   navigation: [
     { label: '서비스', href: '#services' },

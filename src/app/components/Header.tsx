@@ -29,15 +29,23 @@ export function Header() {
         />
       )}
 
-      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-neutral-100">
+      <header className="sticky top-0 z-50 bg-white backdrop-blur-sm border-b border-neutral-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <a href="#" className="text-xl sm:text-2xl font-semibold text-neutral-900 tracking-tight">
-                {headerData.brandName}
-              </a>
-            </div>
+            <button
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                setIsMenuOpen(false);
+              }}
+              className="flex flex-col group cursor-pointer"
+            >
+              <img
+                src={headerData.image.src}
+                alt={headerData.image.alt}
+                className="w-30 object-cover group-hover:opacity-80"
+              />
+            </button>
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
@@ -45,7 +53,7 @@ export function Header() {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-neutral-600 hover:text-neutral-900 transition-colors"
+                  className="text-neutral-600 hover:text-neutral-900 hover:text-rose-500 transition-colors"
                 >
                   {item.label}
                 </a>
@@ -66,7 +74,7 @@ export function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-lg text-neutral-600 hover:bg-neutral-50 transition-colors"
+              className="lg:hidden p-2 rounded-lg text-neutral-600 hover:text-rose-500 hover:bg-neutral-50 transition-colors"
               aria-label={mobileMenuOpen ? '메뉴 닫기' : '메뉴 열기'}
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -83,7 +91,7 @@ export function Header() {
                   key={item.label}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block px-4 py-3 text-neutral-600 hover:bg-neutral-50 rounded-lg transition-colors"
+                  className="block px-4 py-3 text-neutral-600 hover:text-rose-500 hover:bg-neutral-50 rounded-lg transition-colors"
                 >
                   {item.label}
                 </a>

@@ -37,6 +37,10 @@ export interface IconItem {
 // ============================================================
 
 export interface ContactInfo {
+  image: {
+    src: string;
+    alt: string;
+  };
   phone: {
     number: string;
     display: string;
