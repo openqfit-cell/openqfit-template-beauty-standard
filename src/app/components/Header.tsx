@@ -30,8 +30,8 @@ export function Header() {
       <header
         className={`sticky top-0 z-50 border-b border-neutral-100 transition-all duration-300 ${
           mobileMenuOpen
-            ? 'bg-white backdrop-blur-[100px]'
-            : 'bg-white/70 backdrop-blur-[70px]'
+            ? 'bg-white backdrop-blur-[0px]'
+            : 'bg-white/70 backdrop-blur-[10px] shadow-md'
         }`}
       >
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,7 +96,7 @@ export function Header() {
                 : 'opacity-0 -translate-y-2 pointer-events-none'
             }`}
           >
-            <div className="border border-neutral-200 bg-white backdrop-blur-[100px] shadow-xl">
+            <div className="border border-neutral-200 bg-white">
               <nav className="p-4 space-y-1">
                 {headerData.navigation.map((item) => (
                   <a
