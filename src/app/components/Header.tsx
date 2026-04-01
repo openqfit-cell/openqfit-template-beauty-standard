@@ -113,7 +113,7 @@ export function Header() {
                   <a
                     href={headerData.ctaButtons.booking.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center justify-center gap-2 px-4 py-3 bg-rose-500 text-white rounded-lg hover:bg-rose-600 transition-all duration-300"
+                    className="flex items-center justify-center gap-2 px-4 py-3 bg-rose-500 text-white rounded-lg hover:bg-rose-600 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 shadow-sm"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>{headerData.ctaButtons.booking.label}</span>
