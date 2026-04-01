@@ -1,6 +1,7 @@
 import { Star } from 'lucide-react';
 import { aboutData } from '../data/aboutData';
 import { AnimatedSection } from './AnimatedSection';
+import { motion } from 'framer-motion';
 
 export function About() {
   return (
@@ -46,13 +47,17 @@ export function About() {
           <div className="bg-white rounded-2xl p-8 border border-neutral-200 shadow-md hover:shadow-lg transition-shadow">
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 rounded-2xl overflow-hidden bg-neutral-100">
+                <motion.div
+                  initial={{ opacity: 0, x: 24 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  whileHover={{ scale: 1.02 }} transition={{ duration: 0.3 }} className="aspect-[1/1] sm:w-32 sm:h-32 rounded-2xl overflow-hidden bg-neutral-100">
                   <img
                     src={aboutData.director.image}
                     alt={aboutData.director.name}
                     className="w-full h-full object-cover"
                   />
-                </div>
+                </motion.div>
               </div>
 
               <div className="flex-1">
