@@ -1,6 +1,6 @@
 import { pricingData } from '../data/pricingData';
 import { AnimatedSection } from './AnimatedSection';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 export function Pricing() {
   return (

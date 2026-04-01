@@ -1,6 +1,6 @@
 import { heroData } from '../data/heroData';
 import { AnimatedSection } from './AnimatedSection';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 
 export function Hero() {
   const BadgeIcon = heroData.badge.icon;
