@@ -31,7 +31,7 @@ export function Header() {
         className={`sticky top-0 z-50 border-b border-neutral-100 transition-all duration-300 ${
           mobileMenuOpen
             ? 'bg-white backdrop-blur-[0px]'
-            : 'bg-white/70 backdrop-blur-[10px] shadow-md'
+            : 'bg-white/70 backdrop-blur-[10px] shadow-sm'
         }`}
       >
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,7 +78,7 @@ export function Header() {
             {/* Mobile menu button */}
             <button
               onClick={() => setMobileMenuOpen((prev) => !prev)}
-              className="lg:hidden p-2 rounded-lg text-neutral-600 hover:text-rose-500 hover:bg-neutral-50 transition-colors"
+              className="lg:hidden p-2 rounded-lg text-neutral-600 hover:text-neutral-800 hover:bg-neutral-50 transition-colors"
               aria-label={mobileMenuOpen ? '메뉴 닫기' : '메뉴 열기'}
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-menu"
