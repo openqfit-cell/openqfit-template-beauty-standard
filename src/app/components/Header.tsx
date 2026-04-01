@@ -103,7 +103,7 @@ export function Header() {
                     key={item.label}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block px-4 py-3 text-neutral-700 hover:text-rose-500 hover:bg-neutral-50 rounded-lg transition-colors"
+                    className="text-center block px-4 py-3 text-neutral-700 hover:text-rose-500 hover:bg-neutral-100 rounded-lg transition-colors"
                   >
                     {item.label}
                   </a>
