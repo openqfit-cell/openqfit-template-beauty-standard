@@ -102,7 +102,7 @@ export function ScrollIndicator() {
           exit={{ opacity: 0, y: 0 }}
           transition={{ duration: 0.6 }}
           onClick={handleClick}
-          className="cursor-pointer fixed bottom-10 left-1/2 -translate-x-1/2 z-40 w-15 h-15 rounded-full bg-rose-400 hover:bg-rose-600 text-white shadow-[0_8px_12px_rgba(0,0,0,0.2)] hover:shadow-[0 12px_24px_rgba(0,0,0,9)] transition-all duration-300 hover:-translate-y-1 flex items-center justify-center group"
+          className="cursor-pointer fixed bottom-10 left-1/2 -translate-x-1/2 z-40 w-15 h-15 rounded-full bg-rose-500 hover:bg-rose-400 text-white shadow-[0_8px_12px_rgba(0,0,0,0.2)] hover:shadow-[0 12px_24px_rgba(0,0,0,9)] transition-all duration-300 hover:-translate-y-1 flex items-center justify-center group"
           aria-label={isFooterVisible ? "Scroll to top" : "Scroll down"}
         >
           {isFooterVisible ? (
