@@ -6,20 +6,20 @@ export const pricingData = {
   items: [
     {
       category: '피부 관리',
-      price: '55,000원~',
+      price: '55000원~',
       description: '딥 클렌징, 수분 진정, 탄력 관리 등 피부 타입별 맞춤 케어',
       highlights: ['1:1 상태 체크', '저자극 제품 사용'],
     },
     {
       category: '헤어 시술',
-      price: '35,000원~',
+      price: '35000원~',
       description: '컷, 펌, 염색 등 얼굴형과 모발 상태를 고려한 맞춤 시술',
       highlights: ['스타일 상담 포함', '시술 후 홈케어 안내'],
       featured: true,
     },
     {
       category: '네일 · 속눈썹',
-      price: '45,000원~',
+      price: '45000원~',
       description: '젤 네일, 속눈썹 펌, 연장 등 디테일 완성도를 높이는 관리',
       highlights: ['트렌드 디자인 반영', '예약 우선제 운영'],
     },

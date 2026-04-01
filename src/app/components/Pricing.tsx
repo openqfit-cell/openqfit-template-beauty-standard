@@ -1,6 +1,7 @@
 import { pricingData } from '../data/pricingData';
 import { AnimatedSection } from './AnimatedSection';
 import { motion } from 'motion/react';
+import { CountUp } from "./CountUp";
 
 export function Pricing() {
   return (
@@ -38,7 +39,7 @@ export function Pricing() {
                 )}
               </div>
 
-              <div className="text-3xl text-neutral-900 font-bold mb-5">{item.price}</div>
+              <div className="text-3xl text-neutral-900 font-bold mb-5"><CountUp value={item.price} /></div>
 
               <ul className="space-y-2.5 text-sm text-neutral-600 mb-2">
                 {item.highlights.map((highlight, highlightIndex) => (

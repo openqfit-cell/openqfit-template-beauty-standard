@@ -1,7 +1,8 @@
 import { Star } from 'lucide-react';
 import { aboutData } from '../data/aboutData';
 import { AnimatedSection } from './AnimatedSection';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
+import { CountUp } from "./CountUp";
 
 export function About() {
   return (
@@ -34,7 +35,7 @@ export function About() {
                   <div key={index} className="bg-white rounded-xl p-4 border border-neutral-200 hover:shadow-md transition-shadow">
                     <div className="flex items-center gap-2 mb-2">
                       <Icon className="w-5 h-5 text-rose-500 flex-shrink-0" />
-                      <span className="text-xl sm:text-2xl text-neutral-900">{stat.value}</span>
+                      <span className="text-xl sm:text-2xl text-neutral-900"><CountUp value={stat.value} /></span>
                     </div>
                     <span className="text-sm text-neutral-600">{stat.label}</span>
                   </div>
