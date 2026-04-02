@@ -47,7 +47,7 @@ export function Header() {
               <img
                 src={headerData.image.src}
                 alt={headerData.image.alt}
-                className="w-30 object-cover group-hover:opacity-80"
+                className="h-10 object-cover group-hover:opacity-80"
               />
             </button>
 
