@@ -35,7 +35,7 @@ export function Header() {
         }`}
       >
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-14 lg:h-20">
             {/* Logo */}
             <button
               onClick={() => {
@@ -47,7 +47,7 @@ export function Header() {
               <img
                 src={headerData.image.src}
                 alt={headerData.image.alt}
-                className="h-10 object-cover group-hover:opacity-80"
+                className="h-8 object-cover group-hover:opacity-80"
               />
             </button>
 
