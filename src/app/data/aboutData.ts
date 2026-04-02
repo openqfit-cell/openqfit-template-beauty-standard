@@ -14,7 +14,7 @@ export const aboutData: AboutData = {
     ],
     stats: [
       { icon: Award, value: '10년+', label: '운영 경력' },
-      { icon: Heart, value: '5,000+', label: '만족 고객' },
+      { icon: Heart, value: '5000+', label: '만족 고객' },
     ],
   },
   director: {
