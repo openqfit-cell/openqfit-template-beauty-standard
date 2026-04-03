@@ -52,7 +52,7 @@ export function About() {
                   initial={{ opacity: 0, x: 24 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.1 }}
-                  whileHover={{ scale: 1.02 }} transition={{ duration: 0.3 }} className="aspect-[1/1] sm:w-32 sm:h-32 rounded-2xl overflow-hidden bg-neutral-100">
+                  whileHover={{ scale: 1.02 }} className="aspect-[1/1] sm:w-32 sm:h-32 rounded-2xl overflow-hidden bg-neutral-100">
                   <img
                     src={aboutData.director.image}
                     alt={aboutData.director.name}
