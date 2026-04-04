@@ -1,4 +1,4 @@
-import { NavItem, ContactInfo, BusinessHour } from './types';
+import { ContactInfo, BusinessHour } from './types';
 
 // ============================================================
 // 공통 사이트 데이터
@@ -25,15 +25,6 @@ export const contactInfo: ContactInfo = {
   },
 };
 
-export const mainNavigation: NavItem[] = [
-  { label: '서비스', href: '#services' },
-  { label: '갤러리', href: '#gallery' },
-  { label: '가격', href: '#pricing' },
-  { label: '소개', href: '#about' },
-  { label: '후기', href: '#reviews' },
-  { label: '예약/문의', href: '#contact' },
-];
-
 export const businessHours: BusinessHour[] = [
   { day: '평일', hours: '10:00 - 20:00' },
   { day: '토요일', hours: '10:00 - 19:00' },
@@ -41,12 +32,3 @@ export const businessHours: BusinessHour[] = [
 ];
 
 export const closedDay = '매주 월요일 정기 휴무';
-
-export const servicesList = [
-  '피부 관리',
-  '헤어 시술',
-  '네일 케어',
-  '속눈썹',
-  '왁싱',
-  '메이크업',
-];
