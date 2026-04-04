@@ -1,5 +1,5 @@
 import { Instagram, Facebook, Youtube } from 'lucide-react';
-import { brandName, contactInfo, mainNavigation, servicesList } from './siteData';
+import { brandName } from './siteData';
 import { FooterData } from './types';
 
 export const footerData: FooterData = {

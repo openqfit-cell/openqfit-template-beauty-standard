@@ -276,26 +276,6 @@ export interface FooterData {
     name: string;
     tagline: string;
   };
-  labels: {
-    navigation: string;
-    services: string;
-    contact: string;
-    businessHours: string;
-  };
   socialLinks: SocialLink[];
-  navigation: NavItem[];
-  services: string[];
-  contact: {
-    address: string;
-    phone: {
-      number: string;
-      display: string;
-    };
-    email: {
-      address: string;
-      display: string;
-    };
-    businessHours: BusinessHour[];
-  };
   copyright: string;
 }
